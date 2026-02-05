@@ -1,0 +1,94 @@
+.todo-list-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.todo-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--retro-pink), var(--retro-purple));
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.todo-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: var(--retro-yellow);
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.todo-subtitle {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--retro-cyan);
+  font-weight: 500;
+}
+
+.todos-section {
+  margin: 30px 0;
+}
+
+.todos-group {
+  margin-bottom: 30px;
+}
+
+.todos-group-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--retro-purple);
+  padding-left: 10px;
+  border-left: 4px solid var(--retro-pink);
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 2px dashed var(--border-color);
+}
+
+.todo-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  border: 2px solid var(--retro-cyan);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .todo-list-container {
+    padding: 15px;
+  }
+
+  .todo-title {
+    font-size: 2rem;
+  }
+
+  .todo-subtitle {
+    font-size: 1rem;
+  }
+
+  .todos-group-title {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,78 @@
+.todo-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 3px solid var(--retro-cyan);
+  box-shadow: 5px 5px 0 var(--retro-purple);
+}
+
+.todo-input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 3px solid var(--retro-purple);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: var(--retro-pink);
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+.todo-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.btn-add {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--retro-pink), var(--retro-purple));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-add:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-add:active:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-add:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .todo-form {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .todo-input,
+  .btn-add {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+}
